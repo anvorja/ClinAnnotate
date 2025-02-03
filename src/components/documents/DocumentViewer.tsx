@@ -3,15 +3,10 @@
 
 import React from 'react';
 import { FileText, Code2, Database } from 'lucide-react';
-import { DocumentPair } from '@/types/documents/documents';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-
-interface DocumentViewerProps {
-    document: DocumentPair;
-    onCloseAction: () => void;
-}
+import {DocumentViewerProps} from "@/types/documents/viewerPropsType";
 
 export function DocumentViewer({ document, onCloseAction }: DocumentViewerProps) {
     return (
